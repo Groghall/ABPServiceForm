@@ -27,11 +27,11 @@
             <form class="form-horizontal" id="section1" role="form">
                 <legend></legend>
                     <div class="form-group">
-                        <label for="ServiceType" class="col-sm-2">Service Type</label>
+                        <label class="form-control-label; col-sm-2" for="ServiceType">Service Type</label>
                             <div class="col-sm-4">
                             	<input type="text" class="form-control" name="servicetype" id="servicetype" placeholder="">
                             </div>
-                        <label for="ServiceJobNumber" class="col-sm-4">Service Job Number (SJN)</label>
+                        <label for="ServiceJobNumber" class="form-control-label; col-sm-4">Service Job Number (SJN)</label>
                             <div class="col-sm-2">
                             	<input type="text" class="form-control" name="sjn" id="sjn" placeholder="16-00000">
                             </div>
@@ -96,11 +96,11 @@
     <form class="form-horizontal" id="sectionA" role="form">
         <br>
             <h3 style="text-align:center">Point of Work Risk Assessment</h3>
-            <h4 style="text-align:center"><span class="label label-warning">Hazards or risks present on site</span></h4>
+            <h4 style="text-align:center"><label class="label label-warning">Hazards or risks present on site</label></h4>
             <br>
             <div class="form-group">
             <!-- question 1 -->
-                <span class="col-sm-8">Have you signed in at site and made your presence known to your site contact?</span>
+                <label class="form-control-label; col-sm-8">Have you signed in at site and made your presence known to your site contact?</label>
                     <div class="col-sm-4">    
                         <label for="haz1yes" class="radio-inline">
                             <input type="radio" name="haz1" id="haz1yes" value="haz1yes"> yes
@@ -113,7 +113,7 @@
                 <br>
             <div class="form-group">
             <!-- question 2 -->        
-                <span class="col-sm-8">Have you completed the site permit to work?</span>
+                <label class="form-control-label; col-sm-8">Have you completed the site permit to work?</label>
                     <div class="col-sm-4">    
                         <label for="haz2yes" class="radio-inline">
                             <input type="radio" name="haz2" id="haz2yes" value="haz2yes"> yes
@@ -128,14 +128,14 @@
             </div>
             <div class="form-group" id="haz2number" style="display: none">
             <!-- question 2.5 hidden by javscript till checked yes in 2--><br>   
-                <label for="haz2num" class="col-sm-8">Enter number:</label>
+                <label for="haz2num" class="form-control-label; col-sm-8">Enter number:</label>
                     <div class="col-sm-4">
                         <input type="text" class="form-control" name="haz2num" id="haz2num" placeholder="">
                     </div>
             </div>
             <div class="form-group">
             <!-- question 3 --><br>
-                <span class="col-sm-8">Have you contacted the Fleetsolve office and agreed the next contact time?</span>
+                <label class="form-control-label; col-sm-8">Have you contacted the Fleetsolve office and agreed the next contact time?</label>
                     <div class="col-sm-4">    
                         <label for="haz3yes" class="radio-inline">
                             <input type="radio" name="haz3" id="haz3yes" value="haz3yes"> yes
@@ -148,7 +148,7 @@
                 <br>
             <div class="form-group">            
             <!-- question 4 -->
-                <span class="col-sm-8">Do you have safe access to and from the CHP and plant room?</span>
+                <label class="form-control-label; col-sm-8">Do you have safe access to and from the CHP and plant room?</label>
                     <div class="col-sm-4">    
                         <label for="haz4yes" class="radio-inline">
                             <input type="radio" name="haz4" id="haz4yes" value="haz4yes"> yes
@@ -161,7 +161,7 @@
                 <br>
             <div class="form-group">        
             <!-- question 5 -->
-                <span class="col-sm-8">Do you have sufficient illumination and equipment for the outlined task?</span>
+                <label class="form-control-label; col-sm-8">Do you have sufficient illumination and equipment for the outlined task?</label>
                     <div class="col-sm-4">    
                         <label for="haz5yes" class="radio-inline">
                             <input type="radio" name="haz5" id="haz5yes" value="haz5yes"> yes
@@ -174,7 +174,7 @@
                 <br>
             <div class="form-group">
             <!-- question 6-->
-                <span class="col-sm-8">Is the unit currently visually in a safe condition?</span>
+                <label class="form-control-label; col-sm-8">Is the unit currently visually in a safe condition?</label>
                     <div class="col-sm-4">    
                         <label for="haz6es" class="radio-inline">
                             <input type="radio" name="haz6" id="haz6yes" value="haz6yes"> yes
@@ -187,7 +187,7 @@
                 <br>
             <div class="form-group">
             <!-- question 7-->
-                <span class="col-sm-8">Are your hand tools safe and adequate for the task?</span>
+                <label class="form-control-label; col-sm-8">Are your hand tools safe and adequate for the task?</label>
                     <div class="col-sm-4">    
                         <label for="haz7es" class="radio-inline">
                             <input type="radio" name="haz7" id="haz7yes" value="haz7yes"> yes
@@ -200,7 +200,7 @@
                 <br>
             <div class="form-group">
             <!-- question 8-->
-                <span class="col-sm-8">Is your test equipment safe and in within calibration?</span>
+                <label class="form-control-label; col-sm-8">Is your test equipment safe and in within calibration?</label>
                     <div class="col-sm-4">    
                         <label for="haz8es" class="radio-inline">
                             <input type="radio" name="haz8" id="haz8yes" value="haz8yes"> yes
@@ -213,7 +213,7 @@
                 <br>
             <div class="form-group">
             <!-- question 9-->
-                <span class="col-sm-8">Are the manual handling requirements with the task within your capabilities?</span>
+                <label class="form-control-label; col-sm-8">Are the manual handling requirements with the task within your capabilities?</label>
                     <div class="col-sm-4">    
                         <label for="haz9es" class="radio-inline">
                             <input type="radio" name="haz9" id="haz9yes" value="haz9yes"> yes
@@ -226,7 +226,7 @@
                 <br>
             <div class="form-group">
             <!-- question 10-->
-                <span class="col-sm-8">Do you have adequate and appropriate Personal Protective Equipment (PPE) available?</span>
+                <label class="form-control-label; col-sm-8">Do you have adequate and appropriate Personal Protective Equipment (PPE) available?</label>
                     <div class="col-sm-4">    
                         <label for="haz10es" class="radio-inline">
                             <input type="radio" name="haz10" id="haz10yes" value="haz10yes"> yes
@@ -239,7 +239,7 @@
                 <br>
             <div class="form-group">
             <!-- question 11-->
-                <span class="col-sm-8">Are you aware of the precautions needed when working with hazardous substances? (COSHH)</span>
+                <label class="form-control-label; col-sm-8">Are you aware of the precautions needed when working with hazardous substances? (COSHH)</label>
                     <div class="col-sm-4">    
                         <label for="haz11es" class="radio-inline">
                             <input type="radio" name="haz11" id="haz11yes" value="haz11yes"> yes
@@ -252,7 +252,7 @@
                 <br>
             <div class="form-group">
             <!-- question 12-->
-                <span class="col-sm-8">Do you have adequate and appropriate spillage equipment available?</span>
+                <label  class="form-control-label; col-sm-8">Do you have adequate and appropriate spillage equipment available?</label>
                     <div class="col-sm-4">    
                         <label for="haz12yes" class="radio-inline">
                             <input type="radio" name="haz12" id="haz12yes" value="haz12yes"> yes
@@ -265,7 +265,7 @@
                 <br>
             <div class="form-group">
             <!-- question 13-->
-                <span class="col-sm-8">Will you ensure that all environmental contamination is reported?</span>
+                <label  class="form-control-label; col-sm-8">Will you ensure that all environmental contamination is reported?</label>
                     <div class="col-sm-4">    
                         <label for="haz13yes" class="radio-inline">
                             <input type="radio" name="haz13" id="haz13yes" value="haz13yes"> yes
@@ -278,7 +278,7 @@
                 <br>
             <div class="form-group">
             <!-- question 14-->
-                <span class="col-sm-8">Will you ensure you conduct your work in a safe manner where so far as is reasonably practicable and report any accidents/incidents or near misses?</span>
+                <label class="form-control-label; col-sm-8">Will you ensure you conduct your work in a safe manner where so far as is reasonably practicable and report any accidents/incidents or near misses?</label>
                     <div class="col-sm-4">    
                         <label for="haz14yes" class="radio-inline">
                             <input type="radio" name="haz14" id="haz14yes" value="haz14yes"> yes
@@ -306,7 +306,7 @@
                     <div class="container" style="border-color: white"><br>
                         <div id="HazRisk1Show">
                             <div class="form-group">
-                                <label for="HazRisk1" class="col-sm-1">1</label>
+                                <label class="form-control-label" for="HazRisk1" class="col-sm-1">1</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk1" id="hazRisk1" placeholder="">
                                     </div>
@@ -321,7 +321,7 @@
 
                         <div class="collapse" id="HazRisk2Show">
                             <div class="form-group">
-                                <label for="HazRisk2" class="col-sm-1">2</label>
+                                <label class="form-control-label" for="HazRisk2" class="col-sm-1">2</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk2" id="hazRisk2" placeholder="">
                                     </div>
@@ -336,7 +336,7 @@
 
                         <div class="collapse" id="HazRisk3Show">
                             <div class="form-group">
-                                <label for="HazRisk2" class="col-sm-1">3</label>
+                                <label class="form-control-label" for="HazRisk2" class="col-sm-1">3</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk2" id="hazRisk2" placeholder="">
                                     </div>
@@ -351,7 +351,7 @@
 
                         <div class="collapse" id="HazRisk4Show">
                             <div class="form-group">
-                                <label for="HazRisk4" class="col-sm-1">4</label>
+                                <label class="form-control-label" for="HazRisk4" class="col-sm-1">4</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk4" id="hazRisk4" placeholder="">
                                     </div>
@@ -366,7 +366,7 @@
 
                         <div class="collapse" id="HazRisk5Show">
                             <div class="form-group">
-                                <label for="HazRisk5" class="col-sm-1">5</label>
+                                <label class="form-control-label" for="HazRisk5" class="col-sm-1">5</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk5" id="hazRisk5" placeholder="">
                                     </div>
@@ -381,7 +381,7 @@
 
                         <div class="collapse" id="HazRisk6Show">
                             <div class="form-group">
-                                <label for="HazRisk6" class="col-sm-1">6</label>
+                                <label class="form-control-label" for="HazRisk6" class="col-sm-1">6</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="HazRisk6" id="hazRisk6" placeholder="">
                                     </div>
@@ -404,29 +404,29 @@
         <br>
             <h3 style="text-align:center">Work Activity Details</h3>
                     <div class="form-group">
-                        <label for="WorksCarriedOut">Description of Work(s) Carried Out</label>
+                        <label class="form-control-label" for="WorksCarriedOut">Description of Work(s) Carried Out</label>
                             <textarea class="form-control" id="WorksCarriedOut" rows="4"></textarea>
                     </div>
                 <br>
                     <div class="form-group">
-                        <label for="PartsUsed">Parts Used</label>
+                        <label class="form-control-label" for="PartsUsed">Parts Used</label>
                             <textarea class="form-control" id="PartsUsed" rows="4"></textarea>
                     </div>
                 <br>
                     <div class="form-group">
-                        <label for="Defects">Out-standing Defects</label>
+                        <label class="form-control-label" for="Defects">Out-standing Defects</label>
                             <textarea class="form-control" id="Defects" rows="4"></textarea>
                     </div>
                 <br>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="PartsOrdered">Parts Ordered</label>
+                            <label class="form-control-label" for="PartsOrdered">Parts Ordered</label>
                                 <textarea class="form-control" id="Ordered" rows="4"></textarea>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="PartsRequired">Parts Required</label>
+                            <label class="form-control-label" for="PartsRequired">Parts Required</label>
                                 <textarea class="form-control" id="Required" rows="4"></textarea>
                         </div>
                     </div>
@@ -437,64 +437,51 @@
 <div class="container">
     <form class="form-horizontal" id="sectionb" role="form">
         <br>
-
+            <h3 style="text-align:center">Manual Meter Readings and Tank Levels</h3>
+                <br>    
+                    <div class="form-group">
+                <!-- question 1 -->
+                        <label class="col-sm-3" for="time">Time readings were taken</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="time" id="time"></input>
+                            </div>
+                        <label class="col-sm-3" for="DateReadings">Date</label>
+                            <div class="col-sm-3">
+                                <input type="date" class="form-control" name="dateReadings" id="datereadings" placeholder=""></input>
+                            </div>  
+                    </div>
+                <br>
+                    <div class="form-group">
+                    <label class="col-sm-3" for="EngineHours">Engine Run Hours</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="EngineRunHours" id="EngineHours"></input>
+                        </div>
+                    </div>
+                <br>
+            <br>
     </form>
 </div>    
+<br>
+<br>
 
-<legend>Address</legend>
-<div class="form-group">
-    <label for="address" class="col-sm-2">Address</label>
-    <div class="col-sm-4">
-        <input type="text" class="form-control" name="address" id="address" placeholder="Street + No">
-    </div>
-    <label for="city" class="col-sm-2">City</label>
-    <div class="col-sm-4">
-    <input type="text" class="form-control" list="cities" name="city" id="city" placeholder="City">
-    <datalist id="cities">
-        <option value="Aquila">
-        <option value="Aosta">
-        <option value="Bari">
-        <option value="Venezia">
-    </datalist>
-    </div>
-</div>
-<div class="form-group">
-    <label for="zipcode" class="col-sm-2">ZIP Code</label>
-    <div class="col-sm-4">
-        <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="ZIP Code">
-    </div>
-    <label for="region" class="col-sm-2">Region</label>
-    <div class="col-sm-4">
-        <select class="form-control" name="region" id="region">
-            <option>Select a Region</option>
-            <option>Abruzzo</option>
-            <option>Aosta</option>
-            <option>Apulia</option>
-            <option>Veneto</option>
-        </select>
-    </div>
-</div>
-<legend>Contact Info</legend>
-<div class="form-group">
-    <label for="phone" class="col-sm-2">Phone</label>
-    <div class="col-sm-4">
-        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number">
-    </div>
-    <label for="email" class="col-sm-2">Email</label>
-    <div class="col-sm-4">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-    </div>
-</div>
-</br>
-<div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-warning" name="submit" id="submit">Submit</button>
-    </div>
-</div>
-</form>
-</div>
+
 
 </body>
+
+<footer style="padding: 10px 20px 10px 20px">
+<div class="pull-xs-left">
+    <ul class="list-inline" style="display: inline-block;">
+    <li class="list-inline-item"><a href="https://www.fleetsolve.co.uk"><img src="./img/FLT2.png" alt="fleetsolve" data-pin-nopin="true"></a></li>
+    <li class="list-inline-item"><p style="text-align: center;">© <script>document.write(new Date().getFullYear());</script></p></li>
+    </ul>  
+</div>
+    
+    <div class="pull-xs-right" style="color:black">© Stephen Gault <script>document.write(new Date().getFullYear());</script> 
+  </div>
+</footer>
+
+
+
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
