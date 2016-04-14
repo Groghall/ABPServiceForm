@@ -437,26 +437,187 @@
 <div class="container">
     <form class="form-horizontal" id="sectionb" role="form">
         <br>
-            <h3 style="text-align:center">Manual Meter Readings and Tank Levels</h3>
+            <h3 style="text-align:center">Manual Meter Readings</h3>
                 <br>    
                     <div class="form-group">
                 <!-- question 1 -->
-                        <label class="col-sm-3" for="time">Time readings were taken</label>
+                        <label class="form-control-label; col-sm-3" for="time">Time readings were taken</label>
                             <div class="col-sm-3">    
                                 <input class="form-control" type="time" id="time"></input>
                             </div>
-                        <label class="col-sm-3" for="DateReadings">Date</label>
+                        <label class="form-control-label; col-sm-3" for="DateReadings">Date</label>
                             <div class="col-sm-3">
                                 <input type="date" class="form-control" name="dateReadings" id="datereadings" placeholder=""></input>
                             </div>  
                     </div>
                 <br>
+                <br>
+                <br>
                     <div class="form-group">
-                    <label class="col-sm-3" for="EngineHours">Engine Run Hours</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" name="EngineRunHours" id="EngineHours"></input>
-                        </div>
+                        <label class="form-control-label; col-sm-3" for="EngineHours">Engine Run Hours</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="EngineRunHours" id="EngineHours"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M1">M1 Export Electric Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M1" id="M1Export"></input>
+                            </div>
                     </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M2">M2 Import Electric Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M2" id="M2Import"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M3">M3 Steam Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M3" id="M3Steam"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M4">M4 Used Cooking Oil to Engine Fuel Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M4" id="M4UCOtoEng"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M5">M5 Blended Fuel to Engine Fuel Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M5" id="M5Blended"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M6">M6 HT Heat Totaliser</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M6" id="M6HTTotal"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M7">M7 HT Water Flow Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M7" id="M7HTWater"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M8">M8 LT Heat Totaliser</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M8" id="M8LTTotal"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M9">M9 LT Water Flow Meter</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M9" id="M9HTWater"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M10">M10 Tallow T1 to Tallow T2 Tank</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M10" id="M10T1toT2"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M11">M11 Tallow T2 to Bulk Blended Tank</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M11" id="M11T2toBlended"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M12">M12 Bulk UCO to Bulk Blended Tank</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M12" id="M12UCOtoBlended"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="M13">M13 Bulk Blended Tank to Blended Tank</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M13" id="M13BlendedtoBulk"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="M14">M14 Bulk UCO to Day Tank UCO</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="M14" id="M14UCOtoDAY"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="NOx">NOx level from HUG System</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="NOx" id="NOxLevel"></input>
+                            </div>
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                        <label class="form-control-label; col-sm-3" for="Urea">Urea dosing rate</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="Urea" id="UreaRate"></input>
+                            </div>
+                            <div class="col-sm-6">
+                            </div>
+                    </div>
+                <br>
+            <br>
+                <h3 style="text-align:center">Tank Levels</h3>
+                    <br>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-3" for="Tallow1">Tallow T1</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="Tallow1" id="T1Tank"></input>
+                                </div>
+                            <label class="form-control-label; col-sm-3" for="Tallow2">Tallow T2</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="Tallow2" id="T2Tank"></input>
+                                </div>
+                            </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-3" for="UCOBulk">UCO Bulk Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="UCOBulk" id="UCOTank"></input>
+                                </div>
+                            <label class="form-control-label; col-sm-3" for="BlendedBulk">Blended Bulk Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="BlendedBulk" id="BlendedBulkTank"></input>
+                                </div>
+                            </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-3" for="UCODay">UCO Day Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="UCODay" id="UCODayTank"></input>
+                                </div>
+                            <label class="form-control-label; col-sm-3" for="BlendedDay">Blended Day Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="BlendedDay" id="BlendedDayTank"></input>
+                                </div>
+                            </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-3" for="CleanLube">Clean Lube Oil</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="CleanLube" id="CleanLubeOil"></input>
+                                </div>
+                            <label class="form-control-label; col-sm-3" for="BulkSludge">Bulk Sludge Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="BulkSludge" id="BulkSludgeTank"></input>
+                                </div>
+                            </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-3" for="UreaTank">Urea Tank</label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="UreaTank" id="UreaTank"></input>
+                                </div>
+                                <div class="col-sm-6">
+                                </div>
+                            </div>
+
                 <br>
             <br>
     </form>
