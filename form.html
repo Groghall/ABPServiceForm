@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge; IE=9; IE=8; IE=7">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/abp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+<header>
+
+</header>
+<div class="box" style="margin-top:30px" align="center">
+    <img src="./img/FLT1.jpg" class="img-fluid" style="height:60px" >
+</div>
+<br>
+<br>
+<!--form groups for selection of engineers and key info - need to set validation on this section -->
+<div class="container" >
+    <br>
+     <h2 style="text-align:center">Service Report</h2>
+        <br>
+            <form class="form-horizontal" id="section1" role="form">
+                <legend></legend>
+                    <div class="form-group">
+                        <label for="ServiceType" class="col-sm-2">Service Type</label>
+                            <div class="col-sm-4">
+                            	<input type="text" class="form-control" name="servicetype" id="servicetype" placeholder="">
+                            </div>
+                        <label for="ServiceJobNumber" class="col-sm-4">Service Job Number (SJN)</label>
+                            <div class="col-sm-2">
+                            	<input type="text" class="form-control" name="sjn" id="sjn" placeholder="16-00000">
+                            </div>
+                    </div>
+                    <br>
+                    <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
+                    <div class="form-group">
+                        <label for="Engineer1" class="col-sm-2">Engineer 1</label>
+                            <div class="col-sm-4">
+                               <input type="text" class="form-control" name="eng1" id="eng1" placeholder="">
+                            </div>
+                        <label for="date" class="col-sm-2">Date</label>
+                            <div class="col-sm-4">
+                                <input type="date" class="form-control" name="date" id="date" placeholder="">
+                            </div>
+                    </div>
+                    <br>
+                    <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
+                    <div class="form-group">
+                        <label for="Engineer2" class="col-sm-2">Engineer 2</label>
+                            <div class="col-sm-4">
+                               <input type="text" class="form-control" name="eng2" id="eng2" placeholder="">
+                            </div>
+                        <label for="Engineer3" class="col-sm-2">Engineer 3</label>
+                            <div class="col-sm-4">
+                               <input type="text" class="form-control" name="eng3" id="eng3" placeholder="">
+                            </div>
+                    </div>
+                    <br>
+                    <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
+                    <div class="form-group">
+                        <label for="Engineer4" class="col-sm-2">Engineer 4</label>
+                            <div class="col-sm-4">
+                               <input type="text" class="form-control" name="eng4" id="eng4" placeholder="">
+                            </div>
+                        <label for="Engineer5" class="col-sm-2">Engineer 5</label>
+                            <div class="col-sm-4">
+                               <input type="text" class="form-control" name="eng5" id="eng5" placeholder="">
+                            </div>
+                    </div>
+                    <br>
+                    <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
+                    <div class="form-group">
+                        <label for="RiskAssessmentNumber" class="col-sm-4">Annual Risk Assessment Number</label>
+                        <div class="col-sm-2">
+                           <input type="text" class="form-control" name="eng1" id="eng1" placeholder="">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="card card-danger">
+                      <div class="card-body" style="text-align: center; color: white">
+                       A risk assessment needs to be carried out on the activity before any work commences.  If there is an annual risk assessment in place for this job section A forms part of the control measures that MUST be implemented to reduce risks to acceptable levels.  Failure to implement these standards may lead to personal injuries and, as they are based on legislation and/or best practice. 
+                      </div>
+                    </div>
+    </form>
+</div>
+<br>
+<br>
+<!-- section A risk assessment element - validation is critical on this section use Javascript or even jquery-->
+<div class="container">
+    <form class="form-horizontal" id="sectionA" role="form">
+        <br>
+            <h3 style="text-align:center">Point of Work Risk Assessment</h3>
+            <h4 style="text-align:center"><span class="label label-warning">Hazards or risks present on site</span></h4>
+            <br>
+            <div class="form-group">
+            <!-- question 1 -->
+                <span class="col-sm-8">Have you signed in at site and made your presence known to your site contact?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz1yes" class="radio-inline">
+                            <input type="radio" name="haz1" id="haz1yes" value="haz1yes"> yes
+                        </label>
+                        <label for="haz1no" class="radio-inline">
+                            <input type="radio" name="haz1" id="haz1no" value="haz1no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 2 -->        
+                <span class="col-sm-8">Have you completed the site permit to work?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz2yes" class="radio-inline">
+                            <input type="radio" name="haz2" id="haz2yes" value="haz2yes"> yes
+                        </label>
+                        <label for="haz2no" class="radio-inline">
+                            <input type="radio" name="haz2" id="haz2no" value="haz2no"> no
+                        </label>
+                        <label for="haz2na" class="radio-inline">
+                            <input type="radio" name="haz2" id="haz2na" value="haz2na"> n/a
+                        </label>    
+                    </div>
+            </div>
+            <div class="form-group" id="haz2number" style="display: none">
+            <!-- question 2.5 hidden by javscript till checked yes in 2--><br>   
+                <label for="haz2num" class="col-sm-8">Enter number:</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" name="haz2num" id="haz2num" placeholder="">
+                    </div>
+            </div>
+            <div class="form-group">
+            <!-- question 3 --><br>
+                <span class="col-sm-8">Have you contacted the Fleetsolve office and agreed the next contact time?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz3yes" class="radio-inline">
+                            <input type="radio" name="haz3" id="haz3yes" value="haz3yes"> yes
+                        </label>
+                        <label for="haz3no" class="radio-inline">
+                            <input type="radio" name="haz3" id="haz3no" value="haz3no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">            
+            <!-- question 4 -->
+                <span class="col-sm-8">Do you have safe access to and from the CHP and plant room?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz4yes" class="radio-inline">
+                            <input type="radio" name="haz4" id="haz4yes" value="haz4yes"> yes
+                        </label>
+                        <label for="haz4no" class="radio-inline">
+                            <input type="radio" name="haz4" id="haz4no" value="haz4no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">        
+            <!-- question 5 -->
+                <span class="col-sm-8">Do you have sufficient illumination and equipment for the outlined task?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz5yes" class="radio-inline">
+                            <input type="radio" name="haz5" id="haz5yes" value="haz5yes"> yes
+                        </label>
+                        <label for="haz5no" class="radio-inline">
+                            <input type="radio" name="haz5" id="haz5no" value="haz5no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 6-->
+                <span class="col-sm-8">Is the unit currently visually in a safe condition?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz6es" class="radio-inline">
+                            <input type="radio" name="haz6" id="haz6yes" value="haz6yes"> yes
+                        </label>
+                        <label for="haz6no" class="radio-inline">
+                            <input type="radio" name="haz6" id="haz6no" value="haz6no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 7-->
+                <span class="col-sm-8">Are your hand tools safe and adequate for the task?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz7es" class="radio-inline">
+                            <input type="radio" name="haz7" id="haz7yes" value="haz7yes"> yes
+                        </label>
+                        <label for="haz7no" class="radio-inline">
+                            <input type="radio" name="haz7" id="haz7no" value="haz7no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 8-->
+                <span class="col-sm-8">Is your test equipment safe and in within calibration?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz8es" class="radio-inline">
+                            <input type="radio" name="haz8" id="haz8yes" value="haz8yes"> yes
+                        </label>
+                        <label for="haz8no" class="radio-inline">
+                            <input type="radio" name="haz8" id="haz8no" value="haz8no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 9-->
+                <span class="col-sm-8">Are the manual handling requirements with the task within your capabilities?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz9es" class="radio-inline">
+                            <input type="radio" name="haz9" id="haz9yes" value="haz9yes"> yes
+                        </label>
+                        <label for="haz9no" class="radio-inline">
+                            <input type="radio" name="haz9" id="haz9no" value="haz9no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 10-->
+                <span class="col-sm-8">Do you have adequate and appropriate Personal Protective Equipment (PPE) available?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz10es" class="radio-inline">
+                            <input type="radio" name="haz10" id="haz10yes" value="haz10yes"> yes
+                        </label>
+                        <label for="haz10no" class="radio-inline">
+                            <input type="radio" name="haz10" id="haz10no" value="haz10no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 11-->
+                <span class="col-sm-8">Are you aware of the precautions needed when working with hazardous substances? (COSHH)</span>
+                    <div class="col-sm-4">    
+                        <label for="haz11es" class="radio-inline">
+                            <input type="radio" name="haz11" id="haz11yes" value="haz11yes"> yes
+                        </label>
+                        <label for="haz11no" class="radio-inline">
+                            <input type="radio" name="haz11" id="haz11no" value="haz11no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 12-->
+                <span class="col-sm-8">Do you have adequate and appropriate spillage equipment available?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz12yes" class="radio-inline">
+                            <input type="radio" name="haz12" id="haz12yes" value="haz12yes"> yes
+                        </label>
+                        <label for="haz7no" class="radio-inline">
+                            <input type="radio" name="haz12" id="haz12no" value="haz12no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 13-->
+                <span class="col-sm-8">Will you ensure that all environmental contamination is reported?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz13yes" class="radio-inline">
+                            <input type="radio" name="haz13" id="haz13yes" value="haz13yes"> yes
+                        </label>
+                        <label for="haz7no" class="radio-inline">
+                            <input type="radio" name="haz13" id="haz13no" value="haz13no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+            <div class="form-group">
+            <!-- question 14-->
+                <span class="col-sm-8">Will you ensure you conduct your work in a safe manner where so far as is reasonably practicable and report any accidents/incidents or near misses?</span>
+                    <div class="col-sm-4">    
+                        <label for="haz14yes" class="radio-inline">
+                            <input type="radio" name="haz14" id="haz14yes" value="haz14yes"> yes
+                        </label>
+                        <label for="haz14no" class="radio-inline">
+                            <input type="radio" name="haz14" id="haz14no" value="haz14no"> no
+                        </label>
+                    </div>
+            </div>
+                <br>
+                <br>
+                <br>
+            <div class="card card-danger">
+                <div class="card-body" style="text-align: center; color: white; padding:2px 2px 2px 2px">
+                If you answer No to any of the previous questions, you must ensure you resolve the problem with the Site Contact and ensure you inform the Fleetsolve Office (do this even if the local Site Management can resolve the issue safely and effectively).
+                </div>
+            </div>
+            
+
+            <div class="card card-warning">
+                <div class="card-body" style="text-align: center; color: black; padding:2px 2px 2px 2px">
+                Hazards or Risks associated with the task that have changed from the Risk Assessment/Method Statement as outlined above please add further information in the sections provided below
+                </div>
+            </div>    
+                    <div class="container" style="border-color: white"><br>
+                        <div id="HazRisk1Show">
+                            <div class="form-group">
+                                <label for="HazRisk1" class="col-sm-1">1</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk1" id="hazRisk1" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk2Show" aria-expanded="false" aria-controls="HazRisk2Show">Add    
+                                        </button>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="collapse" id="HazRisk2Show">
+                            <div class="form-group">
+                                <label for="HazRisk2" class="col-sm-1">2</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk2" id="hazRisk2" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk3Show" aria-expanded="false" aria-controls="HazRisk3Show">Add    
+                                        </button>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="collapse" id="HazRisk3Show">
+                            <div class="form-group">
+                                <label for="HazRisk2" class="col-sm-1">3</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk2" id="hazRisk2" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk4Show" aria-expanded="false" aria-controls="HazRisk4Show">Add    
+                                        </button>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>    
+
+                        <div class="collapse" id="HazRisk4Show">
+                            <div class="form-group">
+                                <label for="HazRisk4" class="col-sm-1">4</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk4" id="hazRisk4" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk5Show" aria-expanded="false" aria-controls="HazRisk5Show">Add    
+                                        </button>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>    
+
+                        <div class="collapse" id="HazRisk5Show">
+                            <div class="form-group">
+                                <label for="HazRisk5" class="col-sm-1">5</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk5" id="hazRisk5" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk6Show" aria-expanded="false" aria-controls="HazRisk6Show">Add    
+                                        </button>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>    
+
+                        <div class="collapse" id="HazRisk6Show">
+                            <div class="form-group">
+                                <label for="HazRisk6" class="col-sm-1">6</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="HazRisk6" id="hazRisk6" placeholder="">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <a href=""></a>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </br>
+            </br>
+    </form>
+</div>
+<br>
+<br>
+<div class="container">
+    <form class="form-horizontal" id="sectionb" role="form">
+        <br>
+            <h3 style="text-align:center">Work Activity Details</h3>
+                    <div class="form-group">
+                        <label for="WorksCarriedOut">Description of Work(s) Carried Out</label>
+                            <textarea class="form-control" id="WorksCarriedOut" rows="4"></textarea>
+                    </div>
+                <br>
+                    <div class="form-group">
+                        <label for="PartsUsed">Parts Used</label>
+                            <textarea class="form-control" id="PartsUsed" rows="4"></textarea>
+                    </div>
+                <br>
+                    <div class="form-group">
+                        <label for="Defects">Out-standing Defects</label>
+                            <textarea class="form-control" id="Defects" rows="4"></textarea>
+                    </div>
+                <br>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="PartsOrdered">Parts Ordered</label>
+                                <textarea class="form-control" id="Ordered" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="PartsRequired">Parts Required</label>
+                                <textarea class="form-control" id="Required" rows="4"></textarea>
+                        </div>
+                    </div>
+    </form>
+</div>
+<br>
+<br>
+<div class="container">
+    <form class="form-horizontal" id="sectionb" role="form">
+        <br>
+
+    </form>
+</div>    
+
+<legend>Address</legend>
+<div class="form-group">
+    <label for="address" class="col-sm-2">Address</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="address" id="address" placeholder="Street + No">
+    </div>
+    <label for="city" class="col-sm-2">City</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" list="cities" name="city" id="city" placeholder="City">
+    <datalist id="cities">
+        <option value="Aquila">
+        <option value="Aosta">
+        <option value="Bari">
+        <option value="Venezia">
+    </datalist>
+    </div>
+</div>
+<div class="form-group">
+    <label for="zipcode" class="col-sm-2">ZIP Code</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="ZIP Code">
+    </div>
+    <label for="region" class="col-sm-2">Region</label>
+    <div class="col-sm-4">
+        <select class="form-control" name="region" id="region">
+            <option>Select a Region</option>
+            <option>Abruzzo</option>
+            <option>Aosta</option>
+            <option>Apulia</option>
+            <option>Veneto</option>
+        </select>
+    </div>
+</div>
+<legend>Contact Info</legend>
+<div class="form-group">
+    <label for="phone" class="col-sm-2">Phone</label>
+    <div class="col-sm-4">
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+    </div>
+    <label for="email" class="col-sm-2">Email</label>
+    <div class="col-sm-4">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+    </div>
+</div>
+</br>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-warning" name="submit" id="submit">Submit</button>
+    </div>
+</div>
+</form>
+</div>
+
+</body>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="./js/abpjs.js"></script>
+    
+</html>
