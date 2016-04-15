@@ -24,7 +24,7 @@
     <br>
      <h2 style="text-align:center">Service Report</h2>
         <br>
-            <form class="form-horizontal" id="section1" role="form">
+            <form class="form-horizontal" id="section1" role="form" action="send_formdata_abp.php" method="POST">
                 <legend></legend>
                     <div class="form-group">
                         <label class="form-control-label; col-sm-2" for="ServiceType">Service Type</label>
@@ -39,11 +39,11 @@
                     <br>
                     <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
                     <div class="form-group">
-                        <label for="Engineer1" class="col-sm-2">Engineer 1</label>
+                        <label for="Engineer1" class="form-control-label; col-sm-2">Engineer 1</label>
                             <div class="col-sm-4">
                                <input type="text" class="form-control" name="eng1" id="eng1" placeholder="">
                             </div>
-                        <label for="date" class="col-sm-2">Date</label>
+                        <label for="date" class="form-control-label; col-sm-2">Date</label>
                             <div class="col-sm-4">
                                 <input type="date" class="form-control" name="date" id="date" placeholder="">
                             </div>
@@ -51,11 +51,11 @@
                     <br>
                     <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
                     <div class="form-group">
-                        <label for="Engineer2" class="col-sm-2">Engineer 2</label>
+                        <label for="Engineer2" class="form-control-label; col-sm-2">Engineer 2</label>
                             <div class="col-sm-4">
                                <input type="text" class="form-control" name="eng2" id="eng2" placeholder="">
                             </div>
-                        <label for="Engineer3" class="col-sm-2">Engineer 3</label>
+                        <label for="Engineer3" class="form-control-label; col-sm-2">Engineer 3</label>
                             <div class="col-sm-4">
                                <input type="text" class="form-control" name="eng3" id="eng3" placeholder="">
                             </div>
@@ -63,11 +63,11 @@
                     <br>
                     <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
                     <div class="form-group">
-                        <label for="Engineer4" class="col-sm-2">Engineer 4</label>
+                        <label for="Engineer4" class="form-control-label; col-sm-2">Engineer 4</label>
                             <div class="col-sm-4">
                                <input type="text" class="form-control" name="eng4" id="eng4" placeholder="">
                             </div>
-                        <label for="Engineer5" class="col-sm-2">Engineer 5</label>
+                        <label for="Engineer5" class="form-control-label; col-sm-2">Engineer 5</label>
                             <div class="col-sm-4">
                                <input type="text" class="form-control" name="eng5" id="eng5" placeholder="">
                             </div>
@@ -75,9 +75,9 @@
                     <br>
                     <br><!--form groups for selection of engineers and key info - need to set validation on this section -->
                     <div class="form-group">
-                        <label for="RiskAssessmentNumber" class="col-sm-4">Annual Risk Assessment Number</label>
+                        <label for="RiskAssessmentNumber" class="form-control-label; col-sm-4">Annual Risk Assessment Number</label>
                         <div class="col-sm-2">
-                           <input type="text" class="form-control" name="eng1" id="eng1" placeholder="">
+                           <input type="text" class="form-control" name="AnnRiskNum" id="eng1" placeholder="">
                         </div>
                     </div>
                     <br>
@@ -93,7 +93,7 @@
 <br>
 <!-- section A risk assessment element - validation is critical on this section use Javascript or even jquery-->
 <div class="container">
-    <form class="form-horizontal" id="sectionA" role="form">
+    <form class="form-horizontal" id="sectionA" role="form" action="send_formdata_abp.php" method="POST">
         <br>
             <h3 style="text-align:center">Point of Work Risk Assessment</h3>
             <h4 style="text-align:center"><label class="label label-warning">Hazards or risks present on site</label></h4>
@@ -336,9 +336,9 @@
 
                         <div class="collapse" id="HazRisk3Show">
                             <div class="form-group">
-                                <label class="form-control-label" for="HazRisk2" class="col-sm-1">3</label>
+                                <label class="form-control-label" for="HazRisk3" class="col-sm-1">3</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="HazRisk2" id="hazRisk2" placeholder="">
+                                        <input type="text" class="form-control" name="HazRisk3" id="hazRisk2" placeholder="">
                                     </div>
                                     <div class="col-sm-1">
                                         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HazRisk4Show" aria-expanded="false" aria-controls="HazRisk4Show">Add    
@@ -400,7 +400,7 @@
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionb" role="form">
+    <form class="form-horizontal" id="sectionB" role="form" action="send_formdata_abp.php" method="POST">
         <br>
             <h3 style="text-align:center">Work Activity Details</h3>
                     <div class="form-group">
@@ -435,7 +435,7 @@
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionb" role="form">
+    <form class="form-horizontal" id="sectionC" role="form" action="send_formdata_abp.php" method="POST">
         <br>
             <h3 style="text-align:center">Manual Meter Readings</h3>
                 <br>    
@@ -621,11 +621,161 @@
                 <br>
             <br>
     </form>
-</div>    
+</div>
 <br>
 <br>
+<div class="container">
+    <form class="form-horizontal" id="sectionD" role="form" action="send_formdata_abp.php" method="POST">
+        <br>
+            <h3 style="text-align:center">Fluid Analysis Details</h3>
+                <br>    
+                    <div class="form-group">
+                <!-- question 1 -->
+                        <label class="form-control-label; col-sm-3" for="OilSample">Oil Sample Kit No.</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="OilSampleKit" id="OilSample"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="WaterSample">Water Sample Kit No.</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="WaterSampleKit" id="WaterSample"></input>
+                            </div>  
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                <!-- question 1 -->
+                        <label class="form-control-label; col-sm-3" for="FuelSample">Fuel Samples Taken</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="FuelSampleTaken" id="FuelSample"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="FuelSampleMarked">Fuel Sample Marked Up As</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="FuelSampleMarked" id="FuelSampleMarkedAs"></input>
+                            </div>  
+                    </div>
+                <br>
+                <br>
+                    <div>
+                        <div class="form-group">
+                            <label class="form-control-label; col-sm-6" for="FluidComments">Additional Comments</label>
+                                <textarea class="form-control" id="FluidComments" rows="4"></textarea>
+                        </div>
+                    </div>
+    </form>
+</div>                
+<br>
+<br>
+<div class="container">
+    <form class="form-horizontal" id="sectionE" role="form" action="send_formdata_abp.php" method="POST">
+        <br>
+            <h3 style="text-align:center">Environmental Protection / Fire Safety</h3>
+                <br>    
+                    <div class="form-group">
+                <!-- question 1 -->
+                        <label class="form-control-label; col-sm-3" for="SpillKitFull">Engine Room Spill Kit Full</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="SpillKitFull" id="SpillKitFullEng"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="FuelPrep">Fuel Prep Room Spill Kit Full</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="FuelPrep" id="SpillKitFullPrep"></input>
+                            </div>  
+                    </div>
+                <br>
+                <br>
+                    <div class="form-group">
+                <!-- question 1 -->
+                        <label class="form-control-label; col-sm-3" for="EngineFire">Engine Room Fire Extingushers present and in date</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="EngineFire" id="EngineFireExtinguishers"></input>
+                            </div>
+                        <label class="form-control-label; col-sm-3" for="PrepFire">Fuel Prep Room Fire Extinguishers present and in date</label>
+                            <div class="col-sm-3">    
+                                <input class="form-control" type="text" name="PrepFire" id="PrepFireExtinguishers"></input>
+                            </div>
+                            <br>
+                            <br>
+                    </div>
+                
+    </form>
+</div>                
+<br>
+<br>
+<div class="container">
+    <form class="form-horizontal" id="sectionF" role="form" action="send_formdata_abp.php" method="POST">
+        <br>
+            <h3 style="text-align:center">Job Sheet Times</h3>
+                <br>    
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 150px"></th>
+                                    <th for="Monday" style="text-align:center">Mon</th>
+                                    <th for="Monday" style="text-align:center">Tue</th>
+                                    <th for="Monday" style="text-align:center">Wed</th>
+                                    <th for="Monday" style="text-align:center">Thu</th>
+                                    <th for="Monday" style="text-align:center">Fri</th>
+                                    <th for="Monday" style="text-align:center">Sat</th>
+                                    <th for="Monday" style="text-align:center">Sun</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row" style="width: 150px">Travel Time</th>
+                                  <td><input class="form-control" type="text" name="MondayTravelTime" id="MONTT"></input></td>
+                                  <td><input class="form-control" type="text" name="TuesdayTravelTime" id="TUESTT"></input></td>
+                                  <td><input class="form-control" type="text" name="WednesdayTravelTime" id="WEDSTT"></input></td>
+                                  <td><input class="form-control" type="text" name="ThursdayTravelTime" id="THURTT"></input></td>
+                                  <td><input class="form-control" type="text" name="FridayTravelTime" id="FRITT"></input></td>
+                                  <td><input class="form-control" type="text" name="SaturdayTravelTime" id="SATTT"></input></td>
+                                  <td><input class="form-control" type="text" name="SundayTravelTime" id="SUNTT"></input></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" style="width: 150px">Hours on Site</th>
+                                  <td><input class="form-control" type="text" name="MondayHours" id="MONHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="TuesdayHours" id="TUESHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="WednesdayHours" id="WEDSHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="ThursdayHours" id="THURHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="FridayHours" id="FRIHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="SaturdayHours" id="SATHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="SundayHours" id="SUNHrs"></input></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" style="width: 150px">Total Hours</th>
+                                  <td><input class="form-control" type="text" name="MondayTotalHours" id="MONTotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="TuesdayTotalHours" id="TUESTotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="WednesdayTotalHours" id="WEDSTotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="ThursdayTotalHours" id="THURTotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="FridayTotalHours" id="FRITotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="SaturdayTotalHours" id="SATTotalHrs"></input></td>
+                                  <td><input class="form-control" type="text" name="SundayTotalHours" id="SUNTotalHrs"></input></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" style="width: 150px">Mileage</th>
+                                  <td><input class="form-control" type="text" name="MondayMileage" id="MONMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="TuesdayMileage" id="TUESMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="WednesdayMileage" id="WEDSMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="ThursdayMileage" id="THURMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="FridayMileage" id="FRIMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="SaturdayMileage" id="SATMileage"></input></td>
+                                  <td><input class="form-control" type="text" name="SundayMileage" id="SUNMileage"></input></td>
+                                </tr>
+                              </tbody>
 
-
+                        </table>
+                            <br>   
+                    </div>
+                
+    </form>
+</div>                
+<br>
+<br>
+    <div class="form-group">
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                    </div>
+                </div>
 
 </body>
 
@@ -636,9 +786,12 @@
     <li class="list-inline-item"><p style="text-align: center;">© <script>document.write(new Date().getFullYear());</script></p></li>
     </ul>  
 </div>
-    
-    <div class="pull-xs-right" style="color:black">© Stephen Gault <script>document.write(new Date().getFullYear());</script> 
-  </div>
+<div class="pull-xs-right">
+    <ul class="list-inline" style="display: inline-block;">
+    <li class="list-inline-item"><p style="color:black">Form Built by Steve Gault <script>document.write(new Date().getFullYear());</script></p></li>
+    </ul>
+</div>  
+
 </footer>
 
 
