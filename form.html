@@ -87,13 +87,13 @@
                        A risk assessment needs to be carried out on the activity before any work commences.  If there is an annual risk assessment in place for this job section A forms part of the control measures that MUST be implemented to reduce risks to acceptable levels.  Failure to implement these standards may lead to personal injuries and, as they are based on legislation and/or best practice. 
                       </div>
                     </div>
-    </form>
+    
 </div>
 <br>
 <br>
 <!-- section A risk assessment element - validation is critical on this section use Javascript or even jquery-->
 <div class="container">
-    <form class="form-horizontal" id="sectionA" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Point of Work Risk Assessment</h3>
             <h4 style="text-align:center"><label class="label label-warning">Hazards or risks present on site</label></h4>
@@ -395,12 +395,12 @@
                     </div>
                 </br>
             </br>
-    </form>
+    
 </div>
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionB" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Work Activity Details</h3>
                     <div class="form-group">
@@ -430,12 +430,12 @@
                                 <textarea class="form-control" id="Required" rows="4"></textarea>
                         </div>
                     </div>
-    </form>
+    
 </div>
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionC" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Manual Meter Readings</h3>
                 <br>    
@@ -508,7 +508,7 @@
                             </div>
                         <label class="form-control-label; col-sm-3" for="M9">M9 LT Water Flow Meter</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" name="M9" id="M9HTWater"></input>
+                                <input type="text" class="form-control" name="M9" id="M9LTWater"></input>
                             </div>
                     </div>
                 <br>
@@ -620,12 +620,12 @@
 
                 <br>
             <br>
-    </form>
+    
 </div>
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionD" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Fluid Analysis Details</h3>
                 <br>    
@@ -661,12 +661,12 @@
                                 <textarea class="form-control" id="FluidComments" rows="4"></textarea>
                         </div>
                     </div>
-    </form>
+    
 </div>                
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionE" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Environmental Protection / Fire Safety</h3>
                 <br>    
@@ -697,12 +697,12 @@
                             <br>
                     </div>
                 
-    </form>
+    
 </div>                
 <br>
 <br>
 <div class="container">
-    <form class="form-horizontal" id="sectionF" role="form" action="send_formdata_abp.php" method="POST">
+    
         <br>
             <h3 style="text-align:center">Job Sheet Times</h3>
                 <br>    
@@ -766,16 +766,18 @@
                         </table>
                             <br>   
                     </div>
+
+                    <div class="form-group">
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                    </div>
+                </div>
                 
     </form>
 </div>                
 <br>
 <br>
-    <div class="form-group">
-                    <div style="text-align: center;">
-                        <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
-                    </div>
-                </div>
+    
 
 </body>
 
