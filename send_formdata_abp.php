@@ -145,11 +145,13 @@ mysqli_query($link, $insqDbtb) or die(mysqli_error($link));
 <body>
 
 <div class="container" style="margin-top:30px" align="center">
-	<p>Your form has submitted successfully, please press the below button to return to the main form</p>
+	<br>
+		<h4>Your form has submitted successfully, please press the below button to return to the main form</h4>
 
-	<div style="text-align: center;">
-        <a class="btn btn-primary" href="./form.html" role="button">Return</a>
-    </div>
+		<div style="text-align: center;">
+	        <a class="btn btn-primary" href="./form.html" role="button">Return</a>
+	    </div>
+    <br>
 </div>
 </body>
 
