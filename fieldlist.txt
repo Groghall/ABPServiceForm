@@ -1,76 +1,115 @@
-Service Type - id="servicetype" 
-Service Job Number (SJN) - id="sjn" 
-Engineer 1 - id="eng1" 
-Date - id="date" 
-Engineer 2 - id="eng2"
-Engineer 3 - id="eng3"
-Engineer 4 - id="eng4"
-Engineer 5 - id="eng5"
-Annual Risk Assessment Number - id="AnnRiskNum"
-Have you signed in at site and made your presence known to your site contact? - id="haz1yes" - id="haz1no"
-Have you completed the site permit to work? - id="haz2yes" - id="haz2no" - id="haz2na"
-Enter number: - id="haz2num"
-Have you contacted the Fleetsolve office and agreed the next contact time? - id="haz3yes" - id="haz3no"
-Do you have safe access to and from the CHP and plant room? - id="haz4yes" - id="haz4no"
-Do you have sufficient illumination and equipment for the outlined task? - id="haz5yes" - id="haz5no"
-Is the unit currently visually in a safe condition? - id="haz6yes" - id="haz6no" 
-Are your hand tools safe and adequate for the task? - id="haz7yes" - id="haz7no"
-Is your test equipment safe and in within calibration? - id="haz8yes" - id="haz8no"
-Are the manual handling requirements with the task within your capabilities? - id="haz9yes" - id="haz9no"
-Do you have adequate and appropriate Personal Protective Equipment (PPE) available? - id="haz10yes" - id="haz10no" 
-Are you aware of the precautions needed when working with hazardous substances? (COSHH) - id="haz11yes" - id="haz11no"
-Do you have adequate and appropriate spillage equipment available? - id="haz12yes" - id="haz12no"
-Will you ensure that all environmental contamination is reported? - id="haz13yes" - id="haz13no" 
-Will you ensure you conduct your work in a safe manner where so far as is reasonably practicable and report any accidents/incidents or near misses? - id="haz14yes" - id="haz14no"
-1 id="hazRisk1"
-2 id="hazRisk2"
-3 id="hazRisk3" 
-4 id="hazRisk4"
-5 id="hazRisk5"
-6 id="hazRisk6"
-Description of Work(s) Carried Out - id="WorksCarriedOut"
-Parts Used - id="PartsUsed"
-Out-standing Defects - id="Defects"
-Parts Ordered - id="Ordered"
-Parts Required - id="Required"
-Time readings were taken - id="time">
-Date - id="datereadings"
-Engine Run Hours - id="EngineHours"
-M1 Export Electric Meter - id="M1Export"
-M2 Import Electric Meter - id="M2Import"
-M3 Steam Meter - id="M3Steam"
-M4 Used Cooking Oil to Engine Fuel Meter - id="M4UCOtoEng"
-M5 Blended Fuel to Engine Fuel Meter - id="M5Blended"
-M6 HT Heat Totaliser - id="M6HTTotal"
-M7 HT Water Flow Meter - id="M7HTWater"
-M8 LT Heat Totaliser - id="M8LTTotal"
-M9 LT Water Flow Meter - id="M9HTWater"
-M10 Tallow T1 to Tallow T2 Tank - id="M10T1toT2"
-M11 Tallow T2 to Bulk Blended Tank - id="M11T2toBlended"
-M12 Bulk UCO to Bulk Blended Tank - id="M12UCOtoBlended"
-M13 Bulk Blended Tank to Blended Tank - id="M13BlendedtoBulk"
-M14 Bulk UCO to Day Tank UCO - id="M14UCOtoDAY"
-NOx level from HUG System - id="NOxLevel"
-Urea dosing rate - id="UreaRate"
-Tallow T1 - id="T1Tank"
-Tallow T2 - id="T2Tank"
-UCO Bulk Tank - id="UCOTank"
-Blended Bulk Tank - id="BlendedBulkTank"
-UCO Day Tank - id="UCODayTank"
-Blended Day Tank - id="BlendedDayTank"
-Clean Lube Oil - id="CleanLubeOil"
-Bulk Sludge Tank - id="BulkSludgeTank"
-Urea Tank - id="UreaTank"
-Oil Sample Kit No. - id="OilSample"
-Water Sample Kit No. - id="WaterSample"
-Fuel Samples Taken - id="FuelSample"
-Fuel Sample Marked Up As - id="FuelSampleMarkedAs"
-Additional Comments - id="FluidComments"
-Engine Room Spill Kit Full - id="SpillKitFullEng"
-Fuel Prep Room Spill Kit Full - id="SpillKitFullPrep"
-Engine Room Fire Extingushers present and in date - id="EngineFireExtinguishers"
-Fuel Prep Room Fire Extinguishers present and in date - id="PrepFireExtinguishers"
-Travel Time - id="MONTT" - id="TUESTT" - id="WEDSTT" - id="THURTT" - id="FRITT" - id="SATTT" - id="SUNTT"
-Hours on Site - id="MONHrs" - id="TUESHrs" - id="WEDSHrs" - id="THURHrs" - id="FRIHrs" - id="SATHrs" - id="SUNHrs"
-Total Hours - id="MONTotalHrs" - id="TUESTotalHrs" - id="WEDSTotalHrs" - id="THURTotalHrs" - id="FRITotalHrs" - id="SATTotalHrs" - id="SUNTotalHrs"
-Mileage - id="MONMileage" - id="TUESMileage" - id="WEDSMileage" - id="THURMileage" - id="FRIMileage" - id="SATMileage" - id="SUNMileage"
+CREATE TABLE ABP_SERVICE(servicetype VARCHAR(25),
+sjn VARCHAR(25),
+eng1 VARCHAR(25),
+date DATE,
+eng2 VARCHAR(25),
+eng3 VARCHAR(25),
+eng4 VARCHAR(25),
+eng5 VARCHAR(25),
+AnnRiskNum VARCHAR(25),
+haz1yes VARCHAR(25), 
+haz1no VARCHAR(25),
+haz2yes VARCHAR(25), 
+haz2no VARCHAR(25),
+haz2na VARCHAR(25),
+haz2num VARCHAR(25),
+haz3yes VARCHAR(25),
+haz3no VARCHAR(25),
+haz4yes VARCHAR(25),
+haz4no VARCHAR(25),
+haz5yes VARCHAR(25),
+haz5no VARCHAR(25),
+haz6yes VARCHAR(25),
+haz6no VARCHAR(25),
+haz7yes VARCHAR(25),
+haz7no VARCHAR(25),
+haz8yes VARCHAR(25),
+haz8no VARCHAR(25),
+haz9yes VARCHAR(25),
+haz9no VARCHAR(25),
+haz10yes VARCHAR(25),
+haz10no VARCHAR(25),
+haz11yes VARCHAR(25),
+haz11no VARCHAR(25),
+haz12yes VARCHAR(25),
+haz12no VARCHAR(25),
+haz13yes VARCHAR(25),
+haz13no VARCHAR(25),
+haz14yes VARCHAR(25),
+haz14no VARCHAR(25),
+hazRisk1 VARCHAR(25),
+hazRisk2 VARCHAR(25),
+hazRisk3 VARCHAR(25),
+hazRisk4 VARCHAR(25),
+hazRisk5 VARCHAR(25),
+hazRisk6 VARCHAR(25),
+WorksCarriedOut VARCHAR(500),
+PartsUsed VARCHAR(500),
+Defects VARCHAR(500),
+Ordered VARCHAR(500),
+Required VARCHAR(500),
+time TIME,
+datereadings DATE,
+EngineHours VARCHAR(25),
+M1Export VARCHAR(25),
+M2Import VARCHAR(25),
+M3Steam VARCHAR(25),
+M4UCOtoEng VARCHAR(25),
+M5Blended VARCHAR(25),
+M6HTTotal VARCHAR(25),
+M7HTWater VARCHAR(25),
+M8LTTotal VARCHAR(25)
+M9HTWater VARCHAR(25),
+M10T1toT2 VARCHAR(25),
+M11T2toBlended VARCHAR(25),
+M12UCOtoBlended VARCHAR(25),
+M13BlendedtoBulk VARCHAR(25),
+M14UCOtoDAY VARCHAR(25),
+NOxLevel VARCHAR(25),
+UreaRate VARCHAR(25),
+T1Tank VARCHAR(25),
+T2Tank VARCHAR(25),
+UCOTank VARCHAR(25),
+BlendedBulkTank VARCHAR(25),
+UCODayTank VARCHAR(25),
+BlendedDayTank VARCHAR(25),
+CleanLubeOil VARCHAR(25),
+BulkSludgeTank VARCHAR(25),
+UreaTank VARCHAR(25),
+OilSample VARCHAR(25),
+WaterSample VARCHAR(25),
+FuelSample VARCHAR(25),
+FuelSampleMarkedAs VARCHAR(25),
+FluidCommentsVARCHAR(25),
+SpillKitFullEng VARCHAR(25),
+SpillKitFullPrep VARCHAR(25),
+EngineFireExtinguishers VARCHAR(25),
+PrepFireExtinguishers VARCHAR(25),
+MONTT VARCHAR(25),
+TUESTT VARCHAR(25),
+WEDSTT VARCHAR(25),
+THURTT VARCHAR(25),
+FRITT VARCHAR(25),
+SATTT VARCHAR(25),
+SUNTT VARCHAR(25),
+MONHrs VARCHAR(25),
+TUESHrs VARCHAR(25),
+WEDSHrs VARCHAR(25),
+THURHrs VARCHAR(25),
+FRIHrs VARCHAR(25),
+SATHrs VARCHAR(25),
+SUNHrs VARCHAR(25),
+MONTotalHrs VARCHAR(25),
+TUESTotalHrs VARCHAR(25),
+WEDSTotalHrs VARCHAR(25),
+THURTotalHrs VARCHAR(25),
+FRITotalHrs VARCHAR(25),
+SATTotalHrs VARCHAR(25),
+SUNTotalHrs VARCHAR(25),
+MONMileage VARCHAR(25),
+TUESMileage VARCHAR(25),
+WEDSMileageVARCHAR(25),
+THURMileage VARCHAR(25),
+FRIMileage VARCHAR(25),
+SATMileage VARCHAR(25),
+SUNMileage VARCHAR(25))
