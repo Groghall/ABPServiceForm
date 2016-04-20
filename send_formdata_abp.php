@@ -165,7 +165,7 @@ mysqli_query($link, $insqDbtb) or die(mysqli_error($link));
 </div>
 <div class="pull-xs-right">
     <ul class="list-inline" style="display: inline-block;">
-    <li class="list-inline-item"><p style="color:black">Form Built by Steve Gault <script>document.write(new Date().getFullYear());</script></p></li>
+    <li class="list-inline-item"><p style="color:black; font-size: 11px" >Form Built by <a href="https://uk.linkedin.com/in/gaultstephen">Steve Gault </a><script>document.write(new Date().getFullYear());</script></p></li>
     </ul>
 </div>  
 
