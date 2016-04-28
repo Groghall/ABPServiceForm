@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
   <head>
-    <!-- Required meta tags always come first -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge; IE=9; IE=8; IE=7">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS and overide CSS -->
     <link rel="stylesheet" href="css/abp.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet"/>
-    <!--<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js">-->
-
+    
   </head>
   <body>
 <header>
@@ -28,13 +26,17 @@
     <br>
      <h2 style="text-align:center">Service Report</h2>
         <br>
-            <form class="form-horizontal" id="section1" role="form" action="send_formdata_abp.php" method="POST">
+            <form name="abpserviceform" class="form-horizontal ng-scope ng-pristine ng-invalid ng-invalid-required" id="section1" role="form" action="send_formdata_abp.php" method="POST" ng-controller="FormCtrl" ng-submit="submit()" novalidate="">
                 <legend></legend>
-                    <div class="form-group">
-                        <label class="form-control-label; col-sm-2" for="ServiceType">Service Type</label>
+                    <div class="row">
+                        <label class="form-control-label; col-sm-2" for="service_type">Service Type</label>
                             <div class="col-sm-4">
-                            	<input type="text" class="form-control" name="servicetype" id="servicetype" placeholder="">
+                            	<input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" name="service_type" id="servicetype" ng-model="data.service_type" required="">
+                                <div class="error-messages ng-scope ng-active" ng-if="interacted(abpserviceform.service_type)" ng-messages="abpserviceform.service_type.$error">
+                                <ng-message="required" class="ng-scope"></ng-message>
+                                </div>
                             </div>
+                            
                         <label for="ServiceJobNumber" class="form-control-label; col-sm-4">Service Job Number (SJN)</label>
                             <div class="col-sm-2">
                             	<input type="text" class="form-control" name="sjn" id="sjn" placeholder="16-00000">
@@ -805,9 +807,25 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="angular-messages.js"></script>
     <script src="./js/abpjs.js"></script>
+
+    <script type="text/javascript">
+angular.module('app', ['ngMessages'])
+  .controller('FormCtrl', function($scope, $http) {
+
+    $scope.submitted = false;
+    $scope.submit = function() {
+      $scope.submitted = true;
+    };
+    $scope.interacted = function(field) {
+      return $scope.submitted || field.$dirty;
+    };
+  })
+</script>
     
 
+    
 
 </html>

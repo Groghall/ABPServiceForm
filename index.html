@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link data-require="bootstrap-css@3.0.0" 
-      data-semver="3.0.0" 
-      rel="stylesheet" 
-      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-    <script data-require="angular.js@1.0.8" 
-      data-semver="1.0.8" 
-      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-    <script src="rcSubmit.js"></script>
-    <script src="loginController.js"></script>
-    <script src="loginApp.js"></script>
+    <!-- Required meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge; IE=9; IE=8; IE=7">
+    <link rel='shortcut icon' href='./img/favicon.ico' type='image/x-icon'/ >
+
+    <!-- Bootstrap CSS and overide CSS-->
+    <link rel="stylesheet" href="css/abp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    
   </head>
-
-
 <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-          <h1>Simple Login Form</h1>
-          <form name="loginForm" novalidate 
-            ng-app="LoginApp" ng-controller="LoginController" 
-            rc-submit="login()">
-            <div class="form-group"
-              ng-class="{'has-error': rc.loginForm.needsAttention(loginForm.username)}">
-             <input class="form-control" name="username" type="text" 
-              placeholder="Username" required ng-model="session.username" />
-             <span class="help-block" 
-              ng-show="loginForm.username.$error.required">Required</span>
-            </div>
-            <div class="form-group"
-              ng-class="{'has-error': rc.loginForm.needsAttention(loginForm.password)}">
-              <input class="form-control" name="password" type="password" 
-                placeholder="Password" required ng-model="session.password" />
-              <span class="help-block" 
-                ng-show="loginForm.password.$error.required">Required</span>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary pull-right" 
-                value="Login" title="Login">
-                <span>Login</span>
-              </button>
-            </div>
-          </form>
-        </div>
+<!-- Invisible block to position neatly the login elements -->
+  <div class="box" style="margin-top:30px" align="center">
+    <img src="./img/FLT1.jpg" class="img-fluid" style="height:60px" >
+</div>
+<div class="invisible"></div>
+  <div id="wrap">
+    <div id="main" class="container-fluid clear-top">
+      <div class="login-form" >
+          <label class="form-control-label" for="UserName">Username</label>
+            <input type="text" class="form-control" name="Username" id="InputUsername" placeholder="Username (email)">
+          <label class="form-control-label" for="Password" >Password</label>
+            <input type="text" class="form-control" name="Password" id="InputPassword" placeholder="Password"> 
       </div>
+      <br>
+        <div class="form-group">
+          <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+          </div>
+        </div>
+      <br>
     </div>
-  </body>
+  </div>
+  
+  <footer style="padding: 10px 20px 10px 20px">
+    <div class="pull-xs-left">
+        <ul class="list-inline" style="display: inline-block;">
+        <li class="list-inline-item"><a href="https://www.fleetsolve.co.uk"><img src="./img/FLT2.png" alt="fleetsolve" data-pin-nopin="true"></a></li>
+        <li class="list-inline-item"><p style="text-align: center;">© <script>document.write(new Date().getFullYear());</script></p></li>
+        </ul>  
+    </div>
+    <div class="pull-xs-right">
+        <ul class="list-inline" style="display: inline-block;">
+        <li class="list-inline-item"><p style="color:black; font-size: 11px" >Form Built by <a href="https://uk.linkedin.com/in/gaultstephen">Steve Gault </a><script>document.write(new Date().getFullYear());</script></p></li>
+        </ul>
+    </div>  
+</footer>
+</body>
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="angular-messages.js"></script>
+    <script src="./js/abpjs.js"></script>
+
+
+</html> 
