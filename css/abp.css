@@ -4,3 +4,45 @@
     border-color: #e0dede;
     border-radius: 5px 5px 5px 5px;
 }
+.error-messages.ng-active {
+  background:maroon;
+  color:white;
+  padding:5px;
+  border-radius:5px;
+  margin-top:15px;
+  position:relative;
+}
+.error-messages.ng-active:after {
+  position:absolute;
+  top:-10px;
+  content:"";
+  left:20px;
+  border-style:solid;
+  border-color:transparent transparent maroon;
+  border-width:5px;
+}
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+html,body {
+height:100%;
+}
+#wrap {
+min-height: 100%;
+}
+#main {
+overflow:auto;
+padding-bottom:150px; 
+}
+.footer {
+position: relative;
+margin-top: -150px;
+height: 150px;
+clear:both;
+padding-top:20px;
+color:#fff;
+}
+.invisible {
+  height: 150px;
+}
